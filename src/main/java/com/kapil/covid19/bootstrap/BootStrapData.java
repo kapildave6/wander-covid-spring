@@ -73,12 +73,12 @@ public class BootStrapData implements CommandLineRunner{
 		Date startDate = new Date(now - aDay * 15);
 		Date endDate = new Date();
 		
-		for (int i = 0; i < 10000; i++) {
+		for (int i = 0; i < 10; i++) {
 			
 			Gender gender = Gender.values()[new Random().nextInt(Gender.values().length)];
 			CovidStatus activeStatus = CovidStatus.values()[new Random().nextInt(CovidStatus.values().length)]; 
 
-			CovidCase covidCase1 = new CovidCase(faker.name().fullName() + " " + i ,
+			CovidCase covidCase1 = new CovidCase(faker.name().fullName() ,
 						gender, 
 						between(startDate, endDate), 
 						activeStatus , 
