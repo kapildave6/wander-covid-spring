@@ -27,7 +27,6 @@ import com.kapil.covid19.authetication.JwtTokenResponse;
 import com.kapil.covid19.authetication.JwtTokenUtil;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
 public class JwtAuthenticationRestController {
 
   @Value("${jwt.http.request.header}")
